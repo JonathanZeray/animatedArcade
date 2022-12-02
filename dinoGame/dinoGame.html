@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dino.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <section>
+    <div id="game">
+      <div id="dino"></div>
+      <div id="rock"></div>
+    </div>
+    <div class="buttonDiv">
+      <button onclick="startCount()" id="button">PLAY</button>
+      <button onclick="playAgain()" id="playAgainButton">Play Again</button>
+    </div>
+
+    <h1 id="score">0</h1>
+
+  </section>
+<br>
+    <section class="hidden">
+      <div class="hiscore">
+        <h2>Top 5 players</h2>
+        <h3>(on this device)</h3>
+        <!-- <button onClick="clearScores()">Clear</button> -->
+        <table class="scoretable"></table>
+        <button onClick="clearScores()">Clear Scoreboard</button>
+      </div>
+    </section>
+    <script defer src="dino.js"></script>
+  </body>
+</html>

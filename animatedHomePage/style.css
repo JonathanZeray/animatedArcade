@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.btnCenter {
+    margin-bottom: 2rem;
+}
+
+.centerBtn {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.active-nav {
+    height: 3px;
+    background-color: blue;
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3rem;
+    margin: 5rem 5rem;
+}
+
+.card {
+    height: 10rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #93a9ff;
+    /* background-image: url("dinosaurScreen.jpg"); */
+    grid-column: span 3;
+    font-size: 1.2rem;
+    padding: 3rem;
+    box-shadow: 0.7rem 0.7rem 0rem gray;
+    border: 4px solid gray;
+    gap: 2rem;
+}
+
+#card-1 {
+    background-image: url("bombPic.jpg"); 
+}
+
+#card-2 {
+    background-image: url("dinosaurScreen.jpg");
+    /* ändra till bomb bilden i spelet istället */ 
+
+}
+
+#card-3 {
+    background-image:url("snakePic.jpg") ;
+}
+
+#card-4 {
+    color: whitesmoke;
+    background-image: url("popItPic.jpg");
+}
+
+#card-4 p {
+    color: black;
+}
+
+.card p {
+    line-height: 2rem;
+    display: none;
+}
+
+.card.active p {
+    display: block;
+}
+
+.card.active {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    order: 0;
+    height: auto;
+}
+
+.card.is-inactive {
+    grid-column: span 2;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathans Arcade!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <ul class="nav-links">
+        <div class="nav-item">
+          <li><a href="#">My games</a></li>
+          <div class="active-nav"></div>
+        </div>
+        <div class="nav-item">
+          <li><a href="about.html">About</a></li>
+        </div>
+        <div class="nav-item">
+          <li><a href="#">Projects</a></li>
+        </div>
+      </ul>
+    </nav>
+    <section>
+      <div class="card" id="card-1">
+        <h1>Flying bombs</h1>
+        <p>
+          DONT GET HIT! <br>
+          By using the left and right arrow key, you move your meditating player from side to side to avoid the bombs!
+          <br>
+          <button class="btnCenter"><a href="../flyingBombs/bombGame.html">Press to play</a></button>
+        </p>
+      </div>
+      <div class="card" id="card-2">
+        <h1>Jumping Dinosaur</h1>
+        <p>
+          If you've ever had internet issues, then you have played this game before. <br>
+          By using any key on your keyboard, your task is to jump over the rocks that are moving towards you. <br>
+          When you inevitably get bored and lose, scroll down to see if you made it to the locally stored highscore.
+          <br>
+          <button class="btnCenter"><a href="../dinoGame/dinoGame.html">Press to play</a></button>
+        </p>
+      </div>
+      <div class="card" id="card-3">
+        <h1>Snake</h1>
+        <p>
+        Use your arrow keys to collect the red squares. As you do, your own snake gets longer. <br>
+        Make sure to not steer in to yourself or the walls! <br>
+        After your game, press the highscore button to see if you made it on to the firebase stored list!
+        <br>
+          <button class="btnCenter"><a href="../snakeGame/snakeGame.html">Press to play</a></button>
+        </p>
+      </div>
+      <div class="card" id="card-4">
+        <h1>POP IT - Group Project</h1>
+        <p>
+        Get the bubbles! <br>
+        My group created a game where your goal is to swipe your mouse over all the bubbles that show up. <br>
+        You have 1 minute to play the game, after the game a firebase stored highscore list will be displayed.
+        <br>
+          <button class="btnCenter"><a href="https://pop-it-game-team6.netlify.app/">Press to play</a></button>
+        </p>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Flip.min.js"
+      integrity="sha512-byzUdBXaTSrgrlWDvkyU6TBkRSUUiI3EzVIdZtrYEUx1hFnsel9QmEs3QWpKo+8N+G9eOjSxQzFWF1PLq0+WVw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
